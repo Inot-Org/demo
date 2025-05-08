@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+header,
+main,
+footer {
+  width: min(75ch, 100% - 4rem);
+  margin-inline: auto;
+  padding-block: 1lh;
+}
+
+header {
+  padding-top: 2lh;
+}
+
+article {
+  margin-bottom: 1lh;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsl(0deg 0% 100% / 0.1);
+
+  & h2 {
+    margin-bottom: 0.25lh;
+  }
+}
+
+footer {
+  font-style: italic;
+}
